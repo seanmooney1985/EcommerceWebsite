@@ -1,0 +1,11 @@
+h1{
+  color: aqua;
+  background-color:red;
+}
+
+
+img[title="ttt"]{
+  border-style: solid;
+  border-width: thick;
+  border-color: blue;
+}
