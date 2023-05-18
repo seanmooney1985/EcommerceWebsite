@@ -26,7 +26,7 @@
                 <img src="img/sky logo.png" width="90px">
             </div>
             <nav>
-                <ul>
+                <ul id="MeniItems">
                     <li><a href="">Home</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">About</a></li>
@@ -36,6 +36,8 @@
                 </ul>
             </nav>
             <img src="img/shopping cart.png" width="30px" height="30px">
+            <img src="img/menu icon.png" height="20px" class="menu-icon" 
+            onclick="menutoggle()">
          </div>
          <div class="row">
             <div class="col-2">
@@ -74,7 +76,7 @@
             <h2 class="title">Featured Products</h2>
             <div class="row">
                 <div class="col-4">
-                    <img src="img/Black top long.jpg" width="150px">
+                    <img src="img/Black top long.jpg" width="136px">
                     <h4>Black top long slee-ve</h4>
                     <div class="Rating">
                         <i class="fas fa-star"></i>
@@ -86,7 +88,7 @@
                     <p>£50.00</p>
                 </div>
                 <div class="col-4">
-                    <img src="img/sky jumper.jpg" width="120px">
+                    <img src="img/sky jumper.jpg" width="109px">
                     <h4>White Hoodie</h4>
                     <div class="Rating">
                         <i class="fas fa-star"></i>
@@ -98,7 +100,7 @@
                     <p>£45.00</p>
                 </div>
                 <div class="col-4">
-                    <img src="img/Bike.jpg" width="150px">
+                    <img src="img/Bike.jpg" width="191px">
                     <h4>Mountain Bike</h4>
                     <div class="Rating">
                         <i class="fas fa-star"></i>
@@ -240,10 +242,108 @@
                                 With an exclusive 30% discount.
                             </small>
                             <a href="" class="btn">BUY NOW &#8594;</a>
-                        </div>
-                        
+                        </div>                     
                     </div>
+                </div>
             </div>
+
+    <!---------- testimonial--------->
+    <div class="testimonial" style="text-align:center;">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>This is a well good watch its tells all times and has all the apps.</p>
+                    <div class="Rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <img src="img/Thinking-Woman-PNG-Image.png" >
+
+                    <h3>Sarah James.</h3>
+                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-----------brands-------->
+    <div class="brands">
+        <div class="small-conatainer">
+            <div class="row">
+                <div class="col-5">
+                  <img src="img/comcastlogo.png" width="60px">  
+                </div>
+                <div class="col-5">
+                    <img src="img/Universal-Logo.png" width="60px">  
+                  </div>
+                  <div class="col-5">
+                    <img src="img/sky-4-logo.png" width="60px">  
+                  </div>
+                  <div class="col-5">
+                    <img src="img/1280px-Now_TV_(Sky_plc)_logo.svg.png" width="60px">  
+                  </div>
+                  <div class="col-5">
+                    <img src="img/skyocean.png" width="60px">  
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!---------- footer --------->    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <h3> Download our APP!</h3>
+                <P>Download our App on Android and IOS.</P>
+              </div>  
+              <div class="footer-col-2">
+                <img src="img/sky logo.png" width="80px">
+                <P>Our purpose is to sustainably make the pleasure and 
+                    benefits of sports accessible to the many.</P>
+              </div>  
+              <div class="footer-col-3">
+                <h3> Useful Links</h3>
+                <ul>
+                    <li>Discounts</li>
+                    <li>Blog Post</li>
+                    <li>Returns Policy</li>
+                    <li>Join Affilate</li>
+                </ul>
+                
+              </div>
+              <div class="footer-col-4">
+                <h3> Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Tik Tok</li>
+                </ul> 
+            
+
+            </div>
+         </div>
+    </div>    
+  </div> 
+  
+  <!------------js for menu toggle menu----------->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menuToggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
 
 </body>
 </html>

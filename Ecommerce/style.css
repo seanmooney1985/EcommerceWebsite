@@ -108,8 +108,10 @@ p{
   padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
+  margin-right: 0px;
   transition: transform 0.5s;
 }
+
 
 col-4 img{
   width: 100%;
@@ -137,6 +139,10 @@ h4{
   color:#555 ;
   font-weight: normal;
 }
+h3{
+  color:#1d1a1a ;
+  font-weight: normal;
+}
 .col-4 p{
   font-size: 14px;
 }
@@ -150,10 +156,21 @@ h4{
 .col-4 :hover{
   transform: translateY(-5px);
 } 
-.offer{
-  background: radial-gradient(#fff,#ffd6d6);
-  margin-top: 80px;
-  padding: 30px 0;
+/*--------- offer -------*/
+
+.btn {
+  display: inline-block;
+  background-color: #9555c9;
+  color: #0b0b0b;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #fefefe;
 }
 .col-2 offer-img {
   padding: 50px;
@@ -161,5 +178,103 @@ h4{
 }
 
 small{
-  color:#555 ;
+  color:#0a0909 ;
+}
+
+/*---------- Brands -------*/
+
+.brands{
+  margin: 100px auto;
+}
+.col-5{
+  width: 100px;
+}
+.col-5 img{
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.col-5 img:hover{
+  filter: grayscale(0);
+}
+/*------------------- footer --------------*/
+
+.footer{
+  background: #060606;
+  color: #fcf9f9;
+  font-size: 8px;
+  padding: 60px 0 20;
+}
+.footer p{
+  color: #8a8a8a;
+}
+.footer h3{
+  color: #fff;
+  margin-bottom:20px;
+}
+.footer-col-1, .footer-col-2,.footer-col-3,.footer-col-4,{
+  min-width: 10px;
+  margin-bottom: 10px;
+  
+}
+.footer-col-1 {
+  flex-basis: 5%;
+}
+.footer-col-2{
+  flex:1;
+  text-align: center;
+}
+.footer-col-2 img {
+  width: 90px;
+  margin-bottom: 20px;
+}
+.footer-col-3, ..footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col-3, .footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+.ul{
+  list-style-type: none;
+}
+.menu-icon{
+  width: 20px;
+  margin-left:20px;
+  display: none;
+}
+
+/*---------media query for menu ------*/
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+ 
 }
